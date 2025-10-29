@@ -192,6 +192,24 @@ header .navbar{
     gap: 23px;
 }
 
+#backToTop {
+   padding: 15px 30px;
+    margin: 10px;
+    
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    border: 1px solid var(--primary-color);
+    transition: 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    display: flex;      /* ✅ added */
+    margin: 0 auto;     /* ✅ centers the button */
+
+}
+
 /* About section styling */
 .about-section{
     padding: 120px 0;

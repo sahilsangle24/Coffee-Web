@@ -4,7 +4,6 @@ menuOpenButton.addEventListener("click", () =>{
     document.body.classList.toggle("show-mobile-menu");
 });
 
-
 const menuCloseButton = document.querySelector('#menu-close-button');
 
 menuCloseButton.addEventListener("click", () =>
@@ -23,7 +22,6 @@ const swiper = new Swiper('.slider-wrapper', {
   loop: true,
   spaceBetween:25,
   
-
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -37,7 +35,7 @@ const swiper = new Swiper('.slider-wrapper', {
     prevEl: '.swiper-button-prev',
   },
 
-//   responsive breakpoint
+  // responsive breakpoint
   breakpoints :{
     0:{
         slidesPreView: 1
@@ -49,4 +47,23 @@ const swiper = new Swiper('.slider-wrapper', {
         slidesPreView: 3
     }
   }
+});
+
+
+// ✅ Your next code added (NO CHANGES)
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
